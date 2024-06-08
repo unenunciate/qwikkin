@@ -1,16 +1,21 @@
-# 💠 Qwind
+# Qwikkin
 
-**Qwind** is a free and open-source template to make your website using **[Qwik](https://qwik.builder.io/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account best practices.
+**Qwikkin** is a free and open-source template to make your website using **[Qwik](https://qwik.builder.io/) + [Tailwind CSS](https://tailwindcss.com/)** and compatible with hosting via **[KinodeOS](https://kinode.org/)** for the frontend presentation for a KinodeOS application. Ready to start a new project and designed taking into account best practices.
 
 ## Features
 
 - ✅ Integration with **Tailwind CSS** supporting **Dark mode**.
+- ✅ Integration with **Farcaster Frames** and **ReFrame** expansion.
 - ✅ **Production-ready** scores in [Lighthouse](https://web.dev/measure/) and [PageSpeed Insights](https://pagespeed.web.dev/) reports.
 - ✅ **Image optimization** and **Font optimization**.
 
 <br>
 
-<img src="./screenshot.jpg" alt="Qwind Theme Screenshot">
+//To Do: Screenshot
+
+<img src="./screenshot.jpg" alt="Qwikkin Theme Screenshot">
+
+//To Do: Logos/License/Contribuations/Know Issues
 
 [![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
 [![License](https://img.shields.io/github/license/onwidget/qwind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/qwind/blob/main/LICENSE.md)
@@ -40,7 +45,7 @@
 
 ## Demo
 
-📌 [https://qwind.pages.dev/](https://qwind.pages.dev/)
+📌 [https://qwikkin.unenunciate.com/](https://qwikkin.unenunciate.com/)
 
 <br>
 
@@ -50,7 +55,7 @@ This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/over
 
 ### Project structure
 
-Inside **Qwind** template, you'll see the following folders and files:
+Inside **Qwikkin** template, you'll see the following folders and files:
 
 ```
 /
@@ -100,11 +105,15 @@ Inside **Qwind** template, you'll see the following folders and files:
 
 - `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
 
-[![Edit Qwind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/qwind/tree/main)
+//To Do: CodeSandbox
+
+[![Edit Qwikkin on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/qwind/tree/main)
 
 > **Seasoned qwik expert?** Delete this file. Update `config.mjs` and contents. Have fun!
 
 <br>
+
+//To Do: Add Yarn + Add Kinode Commands
 
 ### Commands
 
@@ -152,17 +161,12 @@ Now, your website is ready to be deployed. All generated files are located at
 `dist` folder, which you can deploy the folder to any hosting service you
 prefer.
 
-#### Deploy to Netlify
+#### Deploy as KinodeOS Application
 
-Clone this repository on own GitHub account and deploy to Netlify:
 
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/qwind)
 
-#### Deploy to Vercel
+#### Deploy KinodeOS to AWS as Public Application Gateway
 
-Clone this repository on own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fqwind)
 
 <br>
 
@@ -171,18 +175,26 @@ Clone this repository on own GitHub account and deploy to Vercel:
 ### Base
 
 - [ ] Create utilities to generate permalinks tailored to the domain and base pathname.
-- [ ] Simplify the way to optimize images.
-- [ ] Create component to make SEO simpler and more intuitive.
-- [ ] Create configurable blog with categories, tags and authors using MDX.
-- [ ] Add more frequently used pages (Portfolio, Services, Contact, Docs ...).
-- [ ] Find or create a library to have more icon sources available.
-- [ ] Refactor some code that doesn't follow Qwik conventions yet.
+- [ ] Create utilities to generate IPFS pinned Farcaster Frames tailored to context and user customizations.
+- [ ] Create utilities to enable switching between media content's hosting location (Traditional Cloud  Vs. dStorage [IPFS/Storj] + dDistrobution [Crust Network])
+- [ ] Create basic context system for referencing elements of content
+- [ ] Create basic context system visualization
+- [ ] Create component to enable building sharing frames and contextual frames via client side
+- [ ] Create configurable blog with categories, tags and authors using MDX
+- [ ] Authentication via SIWE and Coinbase Smart Wallet
+- [ ] Add more frequently used pages (About, Services, Contact, Docs ...)
+- [ ] Link previews, frame portal, and IPFS Gateway via hosted domain utilized for backwards compatiablity to resolve frames stored on IPFS without the link's frontend client requiring special handling (URL format: https://domain.example/frame-portal/:CID)
 
 ### Advanced
 
-- [ ] Achieve perfect 100% Google Page Speed score.
-- [ ] Insert complex javascript example widget on home page to demonstrate Qwik features.
-- [ ] Create small illustrative admin backend.
+- [ ] Create component to enable building custom frames via client
+- [ ] Create multimedia context system
+- [ ] Sitemap and SEO Improvements
+- [ ] Utilize Oasis OPL Layer in Attributation system
+- [ ] Create advanaced visualization of context system
+- [ ] Add Multi-tab Service Work Leader Elections
+- [ ] Define a KinodeOS mode for operating as centralized public gateway and service still as a KinodeOS app
+- [ ] Admin backend for operating as centralized public platform
 
 <br>
 
@@ -193,8 +205,8 @@ That would be very useful for all of us and we would be happy to listen and take
 
 ## Acknowledgements
 
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/qwind/graphs/contributors).
+Initially created and maintained by [Unenunciate](https://unenunciate.com) [X](https://x.com/unenunciate)
 
 ## License
 
-**Qwind** is licensed under the MIT license — see the [LICENSE](https://github.com/onwidget/qwind/blob/main/LICENSE.md) file for details.
+**Qwikkin** is licensed under the MIT license — see the [LICENSE](https://github.com/unenunciate/qwikkin/blob/main/LICENSE.md) file for details.
