@@ -1,13 +1,16 @@
 # Qwikkin
 
-**Qwikkin** is a free and open-source template to make your website using **[Qwik](https://qwik.builder.io/) + [Tailwind CSS](https://tailwindcss.com/)** and compatible with hosting via **[KinodeOS](https://kinode.org/)** for the frontend presentation for a KinodeOS application. Ready to start a new project and designed taking into account best practices.
+**Qwikkin** is a free and open-source template to make your website using **[Qwik](https://qwik.builder.io/) + [Tailwind CSS](https://tailwindcss.com/)** and hosting via **[KinodeOS](https://kinode.org/)** node for the frontend presentation for a KinodeOS application. Ready to start a new project and designed taking into account best practices.
 
 ## Features
 
-- ✅ Integration with **Tailwind CSS** supporting **Dark mode**.
-- ✅ Integration with **Farcaster Frames** and **ReFrame** expansion.
-- ✅ **Production-ready** scores in [Lighthouse](https://web.dev/measure/) and [PageSpeed Insights](https://pagespeed.web.dev/) reports.
-- ✅ **Image optimization** and **Font optimization**.
+- ✅ Integration with **Tailwind CSS** supporting **Dark mode**
+- ✅ Integration with **Farcaster Frames** and **ReFrame** expansion
+- ✅ Integration with **Coinbase Smart Wallet**, **OnChainKit**, and **Base**
+- ✅ Integration with **SIWE**
+- ✅ Integration with **Ceramic Network** and **OrbisDB**
+- ✅ Basic Implementation of **ClientDB**
+- ✅ Backwards compatiblity with traditional link previews and handling via public gateway
 
 <br>
 
@@ -105,7 +108,7 @@ Inside **Qwikkin** template, you'll see the following folders and files:
 
 - `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
 
-//To Do: CodeSandbox
+//To Do: Make a CodeSandbox if possible with KinodeOS
 
 [![Edit Qwikkin on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/qwind/tree/main)
 
@@ -133,6 +136,8 @@ All commands are run from the root of the project, from a terminal:
 
 ### Configuration
 
+//To Do: Define config properties
+
 Basic configuration file: `./src/config.mjs`
 
 ```javascript
@@ -149,24 +154,31 @@ export const SITE = {
 
 ### Deploy
 
-#### Deploy to production (manual)
+//TO DO: All Instructions
+
+#### Deploy to Devlopment Enviorment 
+
+
+
+#### Deploy KinodeOS Application
+
+
+
+#### Deploy KinodeOS Node & Installing KinodeOS Application (via Kinode Vallet)
+
+
+
+#### Deploy KinodeOS Node as Public Application Gateway (via AWS)
 
 You can create an optimized production build with:
 
 ```shell
-npm run build
+npm run build //TO DO
 ```
 
 Now, your website is ready to be deployed. All generated files are located at
 `dist` folder, which you can deploy the folder to any hosting service you
 prefer.
-
-#### Deploy as KinodeOS Application
-
-
-
-#### Deploy KinodeOS to AWS as Public Application Gateway
-
 
 <br>
 
@@ -179,10 +191,11 @@ prefer.
 - [ ] Create utilities to enable switching between media content's hosting location (Traditional Cloud  Vs. dStorage [IPFS/Storj] + dDistrobution [Crust Network])
 - [ ] Create basic context system for referencing elements of content
 - [ ] Create basic context system visualization
-- [ ] Create component to enable building sharing frames and contextual frames via client side
+- [ ] Create component to enable building sharing frames and contextual frames via client
 - [ ] Create configurable blog with categories, tags and authors using MDX
 - [ ] Authentication via SIWE and Coinbase Smart Wallet
 - [ ] Add more frequently used pages (About, Services, Contact, Docs ...)
+- [ ] Inital ClientDB intergration
 - [ ] Link previews, frame portal, and IPFS Gateway via hosted domain utilized for backwards compatiablity to resolve frames stored on IPFS without the link's frontend client requiring special handling (URL format: https://domain.example/frame-portal/:CID)
 
 ### Advanced
@@ -190,11 +203,16 @@ prefer.
 - [ ] Create component to enable building custom frames via client
 - [ ] Create multimedia context system
 - [ ] Sitemap and SEO Improvements
+- [ ] ClientDB Basic Fog of Data Optimization
 - [ ] Utilize Oasis OPL Layer in Attributation system
 - [ ] Create advanaced visualization of context system
 - [ ] Add Multi-tab Service Work Leader Elections
+- [ ] ClientDB Advanced Fog of Data Optimization and Service worker optimization
 - [ ] Define a KinodeOS mode for operating as centralized public gateway and service still as a KinodeOS app
 - [ ] Admin backend for operating as centralized public platform
+- [ ] Traui Desktop Application
+- [ ] ClientDB Traui Intergration
+- [ ] Mobile Application and ClientDB SQLite
 
 <br>
 
